@@ -35,19 +35,10 @@ export default function Socials() {
   ];
 
   return (
-    <>
+    <div className="space-y-4">
       {socials.map((social, index) => {
         return <SocialItem key={index} {...social} />;
       })}
-    </>
+    </div>
   );
-}
-
-export function Icon() {
-  interface IconProps {
-    size?: number;
-    color?: string;
-  }
-
-  return <div>Socials</div>;
 }

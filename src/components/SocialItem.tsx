@@ -3,14 +3,14 @@ import { ISocials } from "../interface/socials";
 export default function SocialItem(props: ISocials) {
   return (
     <div className="flex flex-col items-center">
-      <div className="flex justify-between p-4 cursor-pointer border border-b-blue-500 border-white w-[20%] h-20 border-b-4">
+      <div className="flex justify-between p-4 cursor-pointer border border-b-blue-500 border-white md:w-[20%] w-52 h-20 border-b-4">
         <a href={props.url}>
-          <span className="font-semibold text-slate-300">{props.social}</span>
+          <span className="font-base text-slate-300 hover:text-yellow-200">
+            {props.social}
+          </span>
         </a>
-        <>{props.icon}</>
+        <span>{props.icon}</span>
       </div>
-
-      <div className="h-2"></div>
     </div>
   );
 }
