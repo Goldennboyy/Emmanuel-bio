@@ -7,9 +7,10 @@ interface LayoutProps {
 
 export default function Layout({ children, pageTitle }: LayoutProps) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="iewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="The bio of Emmanuel" />
         <title>{pageTitle}</title>
       </head>
       <body className="min-h-screen bg-[#1a1d1c] ">
